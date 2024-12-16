@@ -16,7 +16,7 @@
 .aaa .more_inf {
   font-family: fantasy, cursive;
 }
-.centered-main-page-element {
+.page__main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
