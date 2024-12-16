@@ -18,16 +18,16 @@
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
-.aaa {
+.page__aside {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.page__aside img {
   width: 100%;
 }
-.aaa .more_inf {
+.page__aside .more_inf {
   font-family: "Papyrus", fantasy, cursive;
 }
 .page__main {
@@ -148,7 +148,7 @@
   display: none;
 }
 @media (max-width: 768px) {
-  .aaa {
+  .page__aside {
     text-align: center;
   }
 }
