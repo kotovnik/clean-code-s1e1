@@ -4,6 +4,18 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+.page__header,
+.header__title--hidden,
+.page__footer {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  margin: -2px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
 .aaa {
   width: 500px;
   margin: 0 auto;

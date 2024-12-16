@@ -7,50 +7,60 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <div class="aaa">
-      <img src="./eisenhower-matrix.jpg" alt="the eisenhower matrix how to make decisions on what is urgent and important">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="page__main">
-        <label class="page-name__title" for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input id="new-task" class="task__text" type="text">
-        <button class="new-task__button">Add</button>
-      </div>
-      <h3 class="page-name__title">Todo</h3>
-      <ul id="incomplete-tasks" class="tasks">
-        <li class="tasks__item">
-          <input class="item__checkbox" type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input class="task__text" type="text">
-          <button class="list__button edit">Edit</button>
-          <button class="list__button delete">
-            <img class="list__button-icon" src="./remove.svg" alt="the cross icon removes an item from the list">
-          </button>
-        </li>
-        <li class="tasks__item edit-mode">
-          <input class="item__checkbox" type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input class="task__text" type="text" value="go shopping">
-          <button class="list__button edit">Save</button>
-          <button class="list__button delete">
-            <img class="list__button-icon" src="./remove.svg" alt="the cross icon removes an item from the list">
-          </button>
-        </li>
-      </ul>
-      <h3 class="page-name__title">Completed</h3>
-      <ul id="completed-tasks" class="tasks">
-        <li class="tasks__item">
-          <input class="item__checkbox" type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input class="task__text" type="text">
-          <button class="list__button edit">Edit</button>
-          <button class="list__button delete">
-            <img class="list__button-icon" src="./remove.svg" alt="the cross icon removes an item from the list">
-          </button>
-        </li>
-      </ul>
-    </div>
+    <header class="page__header">
+      <h1 class="header__title--hidden">The application for the task list</h1>
+    </header>
+    <main class="page__main--wrapper">
+      <aside class="aaa">
+        <img src="./eisenhower-matrix.jpg" alt="the eisenhower matrix how to make decisions on what is urgent and important">
+        <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      </aside>
+      <article class="page__main">
+        <h2 class="page-name__title" for="new-task">Add Item</h2>
+        <section class="task-row-wrapper">
+          <input id="new-task" class="task__text" type="text">
+          <button class="new-task__button">Add</button>
+        </section>
+        <section>
+          <h2 class="page-name__title">Todo</h2>
+          <ul id="incomplete-tasks" class="tasks">
+            <li class="tasks__item">
+              <input class="item__checkbox" type="checkbox">
+              <label class="task">Pay Bills</label>
+              <input class="task__text" type="text">
+              <button class="list__button edit">Edit</button>
+              <button class="list__button delete">
+                <img class="list__button-icon" src="./remove.svg" alt="the cross icon removes an item from the list">
+              </button>
+            </li>
+            <li class="tasks__item edit-mode">
+              <input class="item__checkbox" type="checkbox">
+              <label class="task">Go Shopping</label>
+              <input class="task__text" type="text" value="go shopping">
+              <button class="list__button edit">Save</button>
+              <button class="list__button delete">
+                <img class="list__button-icon" src="./remove.svg" alt="the cross icon removes an item from the list">
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="page-name__title">Completed</h2>
+          <ul id="completed-tasks" class="tasks">
+            <li class="tasks__item">
+              <input class="item__checkbox" type="checkbox" checked>
+              <label class="task">See the Doctor</label>
+              <input class="task__text" type="text">
+              <button class="list__button edit">Edit</button>
+              <button class="list__button delete">
+                <img class="list__button-icon" src="./remove.svg" alt="the cross icon removes an item from the list">
+              </button>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer class="page__footer"></footer>
     <script src="app.js"></script>
   </body>
 </html>
