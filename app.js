@@ -24,7 +24,7 @@ var createNewTaskElement=function(taskString){
     //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
-    deleteButtonImg.classList.add("list__button-icon");
+    deleteButtonImg.classList.add("task__button-icon");
     label.innerText=taskString;
     label.className='task';
     //Each elements, needs appending
@@ -32,8 +32,8 @@ var createNewTaskElement=function(taskString){
     editInput.type="text";
     editInput.className="task__text";
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit list__button";
-    deleteButton.className="delete list__button";
+    editButton.className="edit task__button";
+    deleteButton.className="delete task__button";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
     //and appending.
