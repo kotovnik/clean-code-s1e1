@@ -2,19 +2,33 @@
 .page {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0px;
 }
-.aaa {
+.page__header,
+.header__title--visual-hidden,
+.page__footer {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  margin: -2px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.page__aside {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.page__aside .aside__image {
   width: 100%;
 }
-.aaa .more_inf {
-  font-family: fantasy, cursive;
+.page__aside .more_inf {
+  font-family: "Papyrus", fantasy, cursive;
 }
 .page__main {
   display: block;
@@ -34,7 +48,7 @@
 .task__text{
   width: 226px;
 }
-.task-row-wrapper {
+.new-task__row {
   display: flex;
 }
 .tasks {
@@ -43,11 +57,11 @@
 }
 .task__text,
 .item__checkbox,
-.list__button,
+.task__button,
 .new-task__button {
   outline: none;
 }
-.list__button,
+.task__button,
 .new-task__button {
   background: none;
   border: 0px;
@@ -58,12 +72,12 @@
   cursor: pointer;
   vertical-align: middle;
 }
-.list__button:hover,
+.task__button:hover,
 .new-task__button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-.page-name__title {
+.section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -81,14 +95,14 @@
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
   color: #888;
 }
 .task[type="text"]:focus {
   color: #333;
 }
 /* New Task */
-.page-name__title {
+.section__title {
   display: block;
   margin: 0 0 20px;
 }
@@ -110,12 +124,12 @@
   margin: 0 10px;
   vertical-align: middle;
 }
-.delete .list__button-icon {
+.delete .task__button-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete .list__button-icon:hover {
+.delete .task__button-icon:hover {
   transform: rotateZ(0);
 }
 /* Completed */
@@ -134,7 +148,7 @@
   display: none;
 }
 @media (max-width: 768px) {
-  .aaa {
+  .page__aside {
     text-align: center;
   }
 }
